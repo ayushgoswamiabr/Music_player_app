@@ -14,10 +14,9 @@ class HomeScreen extends StatelessWidget {
               icon: Icon(Icons.account_circle),
               onPressed: () {
                 Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  ProfileScreen()));
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => ProfileScreen()));
               },
             ),
             PopupMenuButton<String>(
@@ -72,14 +71,14 @@ class HomeScreen extends StatelessWidget {
                                 width: 160,
                                 child: Image(
                                   image: NetworkImage(
-                                      "https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png"),
+                                      "https://www.kindpng.com/picc/m/116-1160576_google-play-music-png-google-play-music-icon.png"),
                                 ),
                               ),
                             ),
                             Align(
                               alignment: Alignment.center,
-                              child: Text("Justin Beiber"),
-                            )
+                              child: Text("Recently Played"),
+                            ),
                           ],
                         ),
                       ),
@@ -93,15 +92,16 @@ class HomeScreen extends StatelessWidget {
               ),
               Card(
                 child: ListTile(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  MusicScreen()));
-                    },
-                    title: Text('Motivation $int'),
-                    subtitle: Text('this is a description of the motivation')),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => MusicScreen()));
+                  },
+                  title: Text('Shuffle Songs'),
+                  // subtitle: Text(
+                  //     'https://flevix.com/wp-content/uploads/2019/12/Quarter-Circle-Loading-Image-1.gif'),
+                ),
               ),
               Card(
                 child: ListTile(
@@ -170,7 +170,7 @@ class HomeScreen extends StatelessWidget {
                               width: 160,
                               child: Image(
                                 image: NetworkImage(
-                                    "https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png"),
+                                    "https://assets1.risnews.com/styles/content_sm/s3/2018-04/shopping-cart.png?itok=LUk_XbaE"),
                               ),
                             ),
                             Align(

@@ -18,7 +18,7 @@ class _MusicScreenState extends State<MusicScreen> {
   void initState() {
     advancedPlayer.stop();
     super.initState();
-    audiocache.play('2.mp3');
+    audiocache.play('apples.mp3');
     initPlayer();
   }
 
@@ -83,14 +83,14 @@ class _MusicScreenState extends State<MusicScreen> {
                 radius: 80,
                 backgroundColor: Colors.green,
                 backgroundImage: NetworkImage(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZILQdcAimYV79fZ5pkR2F8YefkZQNtTzMtQ&usqp=CAU"),
+                    "https://thumbs.gfycat.com/BeneficialImaginativeCurlew-max-1mb.gif"),
               ),
             ),
             SizedBox(
               height: 120,
             ),
             Text(
-              "No brainer",
+              "Eat Them Apples",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 35,
@@ -140,7 +140,7 @@ class _MusicScreenState extends State<MusicScreen> {
                 IconButton(
                     icon: Icon(Icons.play_circle_filled, size: 35),
                     onPressed: () {
-                      audiocache.play("2.mp3");
+                      audiocache.play("apples.mp3");
                     }),
                 IconButton(
                     icon: Icon(Icons.pause, size: 35),
